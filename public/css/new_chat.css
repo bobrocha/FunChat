@@ -1,0 +1,56 @@
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.panel-heading {
+	position: -webkit-sticky;
+  	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+  	position: sticky;
+	width: 100%;
+	z-index: 99999;
+	top: 0;
+}
+
+.panel-heading h1 {
+	padding-bottom: 0.65em;
+	color: #3399ff;
+	font-weight: bold;
+}
+
+.panel-body {
+	padding: 0;
+}
+
+input.form-control {
+   text-align:center;
+   border: 5px solid #ccc;
+   height: 40px;
+}
+
+.users {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.users li {
+	border-bottom: 2px solid #eee;
+	color: #000;
+}
+
+.users li .username {
+	margin-left: 10px;
+}
+
+.users li:last-child {
+	border-bottom: none;
+}
+
+.users a {
+	display: block;
+	height: 45px;
+	padding: 15px 0;
+}

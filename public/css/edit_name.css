@@ -1,0 +1,24 @@
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.panel-heading h1 {
+	padding-bottom: 0.65em;
+	color: #3399ff;
+	font-weight: bold;
+}
+
+.settings {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.settings .property {
+	margin-top: 15px;
+}
+
+.settings li:first-child {
+	margin-top: 0;
+}

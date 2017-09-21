@@ -1,0 +1,90 @@
+.glyphicon-user {
+    font-size: 25px;
+    color: #3399ff;
+    margin-left: 15px;
+}
+
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.panel-heading {
+	position: -webkit-sticky;
+  	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+  	position: sticky;
+	width: 100%;
+	z-index: 99999;
+	top: 0;
+}
+
+.panel-heading h1 {
+	padding-bottom: 0.65em;
+	color: #3399ff;
+	font-weight: bold;
+}
+
+.panel-body {
+	padding: 0;
+}
+
+.chats {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.chats li {
+	border-bottom: 2px solid #eee;
+	color: #000;
+	height: 85px;
+	padding: 15px 0;
+}
+
+.chats a {
+	color: #000;
+	text-decoration: none;
+}
+
+.chats li:hover,
+.chats li:hover .glyphicon-user,
+.chats li:hover .glyphicon-trash,
+.chats li:hover .text-muted {
+	background-color: #3399ff;
+	color: white;
+	cursor: pointer;
+}
+
+.chats .sender {
+	margin-left: 10px;
+}
+
+.chats .timestamp {
+	margin-right: 15px;
+}
+
+.chats .chat-sample {
+	clear: right;
+	margin-left: 50px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+.chat-sample p {
+	width: 80%;
+}
+
+.chats .delete {
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
+.chats li:last-child {
+	border-bottom: none;
+}
+
+.no-chats {
+    padding: 15px;
+}

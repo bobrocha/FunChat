@@ -1,0 +1,77 @@
+.col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.panel-body {
+	padding: 0 0 15px 0;
+}
+
+.panel-heading {
+	position: -webkit-sticky;
+  	position: -moz-sticky;
+  	position: -ms-sticky;
+  	position: -o-sticky;
+  	position: sticky;
+	width: 100%;
+	z-index: 99999;
+	top: 0;
+}
+
+.panel-heading h1 {
+	padding-bottom: 0.65em;
+	color: #3399ff;
+	font-weight: bold;
+}
+
+.messages {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.message {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    word-break: break-all;
+}
+
+.message::before {
+    background-color: #F2F2F2;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.mymessage {
+    float: right;    
+    margin: 15px 20px 5px 45px;     
+}
+
+.mymessage::before {
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+
+.hismessage {
+    float: left;   
+    margin: 15px 45px 5px 20px;
+    clear: both;     
+}
+
+.hismessage::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
