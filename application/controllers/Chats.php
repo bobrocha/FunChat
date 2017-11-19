@@ -8,7 +8,6 @@ class Chats extends CI_Controller {
 		$this->load->model('chats_model');
 		session_start();
 
-		// make sure user is logged in
 		if (!$_SESSION['isloggedin']) {
 			header('Location:' . site_url());
 			exit;
@@ -25,10 +24,8 @@ class Chats extends CI_Controller {
 							<script src='".base_url().'assets/'."js/chats.js'></script>
 							<script>$('.sticky').Stickyfill();</script>\n";
 
-		// load views
 		$this->load->view('templates/header', $data);
 		
-		// load this view if no chats
 		if (!$this->chats_model->hasChats($_SESSION['userid'])) {
 			$this->load->view('no_chats');
 		}

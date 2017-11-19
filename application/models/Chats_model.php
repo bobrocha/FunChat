@@ -1,7 +1,6 @@
 <?php
 class Chats_Model extends CI_Model {
 
-	// database connection
 	private $conn;
 
 	// set up model
@@ -18,7 +17,6 @@ class Chats_Model extends CI_Model {
 		$sql = '';
 	}
 
-	// determine if user has sent or received any messages
 	public function hasChats($userid)
 	{
 		$sql = 'SELECT COUNT(*) `message_count`
@@ -26,12 +24,25 @@ class Chats_Model extends CI_Model {
 				WHERE `recipient_id` = ?';
 
 		if ($stmt = $this->conn->prepare($sql)) {
+			// bind variable to prepared statement
 			$stmt->bind_param('i', $userid);
+
+			// execute prepared statement
 			$stmt->execute();
+
+			// store whole result to get properties, downloads all rows
 			$stmt->store_result();
+
+			// bind result to specified variable
 			$stmt->bind_result($result);
+
+			// fetch result from statement and place into bound variable(s)
 			$stmt->fetch();
+
+			// free the result
 			$stmt->free_result();
+
+			// close statement
 			$stmt->close();
 
 			if ($result) {

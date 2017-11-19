@@ -13,7 +13,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class='new_chat pull-right'><a href='new_chat/'><span class='glyphicon glyphicon-plus'></span></a></div>
+						<div class='new_chat pull-right'><a href='search/'><span class='glyphicon glyphicon-plus'></span></a></div>
 						<h1 class='panel-title text-center'>FunChat</h1>
 					</div>
 					<div class='panel-body'>

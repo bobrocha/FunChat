@@ -10,9 +10,6 @@
 					</div>
 					<div class='panel-body'>
 						<ul class='users'>
-							<li class='user text-center'>
-								<a href='#'><span class='glyphicon glyphicon-user'></span><strong class='username'>Jappleseed</strong></a>
-							</li>
 						</ul>
 					</div>
 				</div>

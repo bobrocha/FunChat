@@ -7,7 +7,8 @@
     <title><?php echo $title ?></title>
     <link href='<?php echo base_url().'assets/' ?>css/bootstrap.css' rel='stylesheet'>
     <link href='<?php echo base_url().'assets/' ?>css/global.css' rel='stylesheet'>
-    <?php echo $custom_css ?>
+    <?php echo $custom_css . "\n"?>
+    <!--this JavaScript variable is used by jQuery for ajax requests-->
     <script>var site_url = '<?php echo site_url(); ?>';</script>
 </head>
 <body>
